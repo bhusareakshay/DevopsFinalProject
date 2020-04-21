@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  replicas: 3
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - image: bhusareakshay/frontend:v1
+          imagePullPolicy: Always
+          name: frontend
+          ports:
+            - containerPort: 80
+          env:
+          - name: API_BASE_URL
+            value: "csye6225-su19-bhusarea.me:3000/"
+
