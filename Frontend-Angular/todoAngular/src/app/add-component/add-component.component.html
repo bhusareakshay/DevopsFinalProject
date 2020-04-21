@@ -1,0 +1,16 @@
+<div class="buttonlayout">
+    <button (click)="emit()">{{showBtn}} All Todo Items</button>
+    <button type="submit" form="TodoForm" (click)="save()">Save</button>
+</div>
+<br>
+<div class="todoForm">
+    <form id="TodoForm" [formGroup]="addTodoForm">
+        <input type="text" formControlName="title" placeholder="Title" size="62">
+        <br>
+        <br>
+        <textarea formControlName="description" placeholder="Add Description Details" rows="3" cols="57"></textarea>
+        <br>
+        <br> Due Date : <input type="date" formControlName="dueDate"> &nbsp; Due Time :
+        <input type="time" formControlName="dueTime" >
+    </form>
+</div>
