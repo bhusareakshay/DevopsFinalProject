@@ -53,9 +53,15 @@ Monitored and tracked progress [ Jira Dashboard ]
 
 # Application Monitoring
 
+### Prometheus DashBoard:
+![Prmetheus](https://github.com/HarshithaSomaSundar/DevopsFinalProject/blob/master/Prometheus.jpg)
+
 ### Grafana Dashboard :
 Username: admin
 Password: admin
+	* Click on the + and then on Import
+	* Enter 10000 in the box and import the dashboard
+
 ![Grafana](https://github.com/HarshithaSomaSundar/DevopsFinalProject/blob/master/Grafana%20Dashboard.png) 
 
 
