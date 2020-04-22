@@ -109,9 +109,9 @@ Create a Grafana dashboard
  	
 * Copy the backend service url
  	
-* Go to AWS Route53 and create a hosted zone with domain 	“csye6225-su19-bhusarea.me” 
+* Go to AWS Route53 and create a hosted zone with domain “csye6225-su19-bhusarea.me” 
  	
-* Add a Record set with an Alias to the backend service url (the LoadBalancer url can be selected from the dropdown)
+* Add a Record set with Type A and an Alias to the backend service url (the LoadBalancer url can be selected from the dropdown)
  	
 * Save the changes
  	
