@@ -54,6 +54,8 @@ Monitored and tracked progress [ Jira Dashboard ]
 # Application Monitoring
 
 ### Grafana Dashboard :
+Username: admin
+Password: admin
 ![Grafana](https://github.com/HarshithaSomaSundar/DevopsFinalProject/blob/master/Grafana%20Dashboard.png) 
 
 
