@@ -14,18 +14,25 @@ GitHub URL: https://github.com/HarshithaSomaSundar/DevopsFinalProject
 # Project Objective
 
 Create a scalable micro-service based ToDo application to keep a track of and update ToDo’s
+
 Dockerize the applications and deploy it on a Kubernetes Cluster
+
 Monitor the application performance
 
 # Use Cases
 A TODO application to set a due date and an option to mark it complete/Pending.
+
 Update a TODO’s description or due date if necessary.
+
 Retrieve a TODO to check the status.
+
 Delete a TODO once it’s complete.
 
 # Development Technique
 Followed Pair Programming Technique
+
 Developed and reviewed application development and deployment 
+
 Monitored and tracked progress [ Jira Dashboard ]
 
 
@@ -58,9 +65,12 @@ Monitored and tracked progress [ Jira Dashboard ]
 
 ### Grafana Dashboard :
 Username: admin
+
 Password: admin
-	* Click on the + and then on Import
-	* Enter 10000 in the box and import the dashboard
+
+* Click on the + and then on Import
+
+* Enter 10000 in the box and import the dashboard
 
 ![Grafana](https://github.com/HarshithaSomaSundar/DevopsFinalProject/blob/master/Grafana%20Dashboard.png) 
 
@@ -75,12 +85,19 @@ Password: admin
 # Running the code
 
 We created a shell script which is responsible to do the following tasks:
+
 Create Kubernetes cluster using terraform 	
+
 Deploy backend application
+
 Create a service for backend
+
 Deploy frontend application
+
 Create a service for frontend
+
 Create a Prometheus dashboard
+
 Create a Grafana dashboard
 
 
