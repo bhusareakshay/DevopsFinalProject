@@ -100,7 +100,7 @@ Create a Prometheus dashboard
 
 Create a Grafana dashboard
 
-
+**Note:** This script runs only on Linux as it involves modifying the kube config file. To run the project on Windows/Mac, run each command from the script manually, making changes according to the OS file system.
 
 ### Steps to follow:
 * Move to Infrastructure > Cluster
