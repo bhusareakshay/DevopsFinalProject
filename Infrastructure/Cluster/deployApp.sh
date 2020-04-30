@@ -14,7 +14,8 @@ printf -- '\033[32m *** Kubectl Setup  *** \033[0m\n';
 printf -- '\033[33m *** Saving config map in local *** \033[0m\n';
 terraform output config_map_aws_auth > config_map_aws_auth.yaml &&
 printf -- '\033[33m *** Appending kubeconfig to local *** \033[0m\n';
-terraform output kubeconfig > ~/.kube/config &&
+terraform output kubeconfig > ~/.kube/config-terraform-eks-demo &&
+cp ~/.kube/config-terraform-eks-demo ~/.kube/config
 printf -- '\033[33m *** Applying configmap *** \033[0m\n';
 kubectl apply -f config_map_aws_auth.yaml &&
 
